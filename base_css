@@ -155,8 +155,6 @@ footer {
 }
 
 
-/* Text styles and margins */
-
 p {
 	margin-bottom: 15px;
 }
