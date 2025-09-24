@@ -1,3 +1,25 @@
+body.works_on_smartphone main {
+  display: flex;
+  flex-direction: column;
+}
+
+body.works_on_smartphone article,
+body.works_on_smartphone aside {
+  flex: none;
+  width: 100%;
+  max-height: none; 
+}
+
+
+@media (min-width: 700px) {
+  body.works_on_smartphone main {
+    flex-direction: row; 
+  }
+
+  body.works_on_smartphone article { flex: 2; }
+  body.works_on_smartphone aside   { flex: 1; }
+}
+
 body {
   display: flex;
   flex-direction: column;
